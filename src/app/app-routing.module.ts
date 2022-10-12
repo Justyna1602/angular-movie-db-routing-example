@@ -5,6 +5,8 @@ import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.compo
 import {CategoriesComponent} from './pages/categories/categories.component';
 import {MovieDetailsComponent} from './pages/movies/movie-details/movie-details.component';
 import {MoviesInCategoryComponent} from './pages/categories/movies-in-category/movies-in-category.component';
+import {YearsComponent} from './pages/years/years.component';
+import { MoviesInYearsComponent } from './pages/years/movies-in-years/movies-in-years.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/movies', pathMatch: 'full'},
@@ -12,6 +14,8 @@ const routes: Routes = [
   {path: 'movies/:id', component: MovieDetailsComponent},
   {path: 'categories', component: CategoriesComponent},
   {path:'category/:category', component: MoviesInCategoryComponent},
+  {path: 'years', component: YearsComponent},
+  {path:'years/:years', component: MoviesInYearsComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 @NgModule(
