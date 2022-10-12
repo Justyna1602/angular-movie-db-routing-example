@@ -1,0 +1,8 @@
+<div class="grid">
+  <a
+    class="btn-large grey darken-1"
+    *ngFor="let y of years | async"
+    [routerLink]="['/years', y]"
+  >{{ y }}</a
+  >
+</div>
