@@ -7,6 +7,7 @@ import {MovieDetailsComponent} from './pages/movies/movie-details/movie-details.
 import {MoviesInCategoryComponent} from './pages/categories/movies-in-category/movies-in-category.component';
 import {YearsComponent} from './pages/years/years.component';
 import { MoviesInYearsComponent } from './pages/years/movies-in-years/movies-in-years.component';
+import {AddMovieComponent} from './pages/add-movie/add-movie.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/movies', pathMatch: 'full'},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'category/:category', component: MoviesInCategoryComponent},
   {path: 'years', component: YearsComponent},
   {path:'years/:years', component: MoviesInYearsComponent},
+  {path:'add-movie', component: AddMovieComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 @NgModule(
